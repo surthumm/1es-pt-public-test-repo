@@ -25,6 +25,9 @@ resources:
 extends:
   template: v1/1ES.Unofficial.PipelineTemplate.yml@1ESPipelineTemplates
   parameters:
+    sdl:
+      autobaseline:
+        enableForGitHub: true
     pool:
       name: ${{ parameters.poolName }}
       image: ${{ parameters.image }}
