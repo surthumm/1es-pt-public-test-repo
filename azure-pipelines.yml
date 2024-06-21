@@ -9,7 +9,7 @@ parameters:
 
 - name: image
   type: string
-  default: pt-validation-ppe-windows2022
+  default: pt-validation-dev-windows2022
 
 - name: os
   type: string
