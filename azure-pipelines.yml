@@ -5,11 +5,11 @@ trigger: none
 parameters:
 - name: poolName
   type: string
-  default: pt-validation-ppe
+  default: pt-github-test-pool
 
 - name: image
   type: string
-  default: pt-validation-ppe-windows2019
+  default: pt-validation-ppe-windows2022
 
 - name: os
   type: string
