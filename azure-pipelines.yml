@@ -57,5 +57,5 @@ extends:
             targetPath: $(System.DefaultWorkingDirectory)
             artifactName: myPipelineArtifact
         steps:
-        - powershell: echo "Hello World from Job"
+        - powershell: echo "Hello World from Job. Build Repository - $(Build.Repository.ID)"
         - checkout: self
