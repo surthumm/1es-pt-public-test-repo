@@ -1,6 +1,19 @@
 # This pipeline demonstrates how to build directly in a Windows VM
 name: PipelineBuildingInWindowsVM
-trigger: none
+trigger:
+  branches:
+    include:
+      - '*'
+  paths:
+    exclude:
+      - README.md
+pr:
+  branches:
+    include:
+      - '*'
+  paths:
+    exclude:
+      - README.md
 
 parameters:
 - name: poolName
